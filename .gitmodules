@@ -12,7 +12,7 @@
 	url = https://github.com/BPA-CSIRO-Workshops/btp-orchestration.git
 [submodule "040_general_qc"]
 	path = 040_general_qc
-	url = https://github.com/tsonika/040_general_qc.git
+	url = https://github.com/tsonika/Denovo_DNA_2015/040_general_qc.git
 [submodule "050_assembly_qc"]
 	path = 050_assembly_qc
-	url = https://github.com/tsonika/050_assembly_qc.git
+	url = https://github.com/tsonika/Denovo_DNA_2015/050_assembly_qc.git
