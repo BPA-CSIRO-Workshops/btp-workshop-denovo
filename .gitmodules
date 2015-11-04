@@ -1,9 +1,6 @@
 [submodule "style"]
 	path = style
 	url = https://github.com/BPA-CSIRO-Workshops/btp-handout-style.git
-[submodule "050_ngs-qc"]
-	path = 050_ngs-qc
-	url = https://github.com/BPA-CSIRO-Workshops/btp-module-ngs-qc.git
 [submodule "905_post-workshop"]
 	path = 905_post-workshop
 	url = https://github.com/BPA-CSIRO-Workshops/btp-module-nectar.git
@@ -13,3 +10,9 @@
 [submodule "orchestration"]
 	path = orchestration
 	url = https://github.com/BPA-CSIRO-Workshops/btp-orchestration.git
+[submodule "040_general_qc"]
+	path = 040_general_qc
+	url = https://github.com/tsonika/040_general_qc.git
+[submodule "050_assembly_qc"]
+	path = 050_assembly_qc
+	url = https://github.com/tsonika/050_assembly_qc.git
