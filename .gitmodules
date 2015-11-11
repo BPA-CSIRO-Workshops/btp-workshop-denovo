@@ -13,3 +13,6 @@
 [submodule "050_assembly_qc"]
 	path = 050_assembly_qc
 	url = https://github.com/tsonika/Denovo_DNA_2015/050_assembly_qc.git
+[submodule "020_cmd_intro"]
+	path = 020_cmd_intro
+	url = https://github.com/tsonika/cmd_intro.git
