@@ -19,3 +19,6 @@
 [submodule "060_euk_assem"]
 	path = 060_euk_assem
 	url = https://github.com/tsonika/euk_assemly.git
+[submodule "050_bac_assem"]
+	path = 050_bac_assem
+	url = https://github.com/tsonika/bac_assembly.git
