@@ -16,3 +16,6 @@
 [submodule "020_cmd_intro"]
 	path = 020_cmd_intro
 	url = https://github.com/tsonika/cmd_intro.git
+[submodule "060_euk_assem"]
+	path = 060_euk_assem
+	url = https://github.com/tsonika/euk_assemly.git
