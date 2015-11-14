@@ -22,3 +22,6 @@
 [submodule "050_bac_assem"]
 	path = 050_bac_assem
 	url = https://github.com/tsonika/bac_assembly.git
+[submodule "070_scaffold"]
+	path = 070_scaffold
+	url = https://github.com/tsonika/scaffolding
