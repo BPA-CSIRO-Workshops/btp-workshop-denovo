@@ -148,8 +148,8 @@ results in the form of a zipped and unzipped directory for each input file.
 \begin{steps}
 Execute the following command on the two files:
 \begin{lstlisting}
-fastqc -f qcdemo_R1.fastq.gz
-fastqc -f qcdemo_R2.fastq.gz
+fastqc -f fastq qcdemo_R1.fastq.gz
+fastqc -f fastq qcdemo_R2.fastq.gz
 \end{lstlisting}
 
 View the FastQC report file of the bad data using a web browser such as
@@ -394,18 +394,26 @@ Trimmomatic
 \url{http://www.usadellab.org/cms/?page=trimmomatic}
 
 \begin{steps}
-Here we are demonstrating \texttt{Skewer} to trim a given adapter
-sequence.
-
+Here we are demonstrating \texttt{Skewer} to trim a given adapter sequence.
+First look at the fastqc matrices for the file \texttt{adaptorQC.fastq.gz}:
 \begin{lstlisting}
-cd ~/qc
 fastqc -f fastq  adaptorQC.fastq.gz
+firefox adaptorQC.fastq_fastqc.html &
 skewer -x TGGAATTCTCGGGTGCCAAGGT -t 20 -l 10 -L 35 -q 30 adaptorQC.fastq.gz
-
 \end{lstlisting}
 \end{steps}
 
 \begin{note}
+Remeber to do the adaptor clipping before the quality trimming of bases.
+\end{note}
+
+\begin{steps}
+We will removed adaptor and do quality based trimming using a single command.
+\begin{lstlisting}
+skewer -x TGGAATTCTCGGGTGCCAAGGT -t 20 -l 10 -L 35 -q 30 adaptorQC.fastq.gz
+\end{lstlisting}
+\end{steps}
+
 \begin{description}[style=multiline,labelindent=0cm,align=right,leftmargin=\descriptionlabelspace,rightmargin=1.5cm,font=\ttfamily]
 \item[-x] adaptor sequence used
 \item[-t] number of threads to use
@@ -413,7 +421,6 @@ skewer -x TGGAATTCTCGGGTGCCAAGGT -t 20 -l 10 -L 35 -q 30 adaptorQC.fastq.gz
 \item[-L] Max length to keep after trimming, in this experiment we were expecting only small RNA fragments
 \item[-Q] Quality threshold used for trimming at 3' end. Use -m option to control the end you want to trim
 \end{description}
-\end{note}
 
 \begin{steps}
 Run FastQC on the adapter trimmed file and visualise the quality scores. Fastqc now shows adaptor free results.
