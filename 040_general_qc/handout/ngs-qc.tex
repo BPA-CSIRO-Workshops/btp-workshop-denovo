@@ -291,7 +291,7 @@ We will be using Skewer to perform the quality trimming.
 
 Run the following command to quality trim a set of paired end data.
 \begin{lstlisting}
-cd ~/qc
+cd /home/trainee/qc
 skewer -t 20 -l 50  -q 30 -Q 25 -m pe qcdemo_R1.fastq.gz qcdemo_R2.fastq.gz
 \end{lstlisting}
 \end{steps}
@@ -399,12 +399,11 @@ First look at the fastqc matrices for the file \texttt{adaptorQC.fastq.gz}:
 \begin{lstlisting}
 fastqc -f fastq  adaptorQC.fastq.gz
 firefox adaptorQC.fastq_fastqc.html &
-skewer -x TGGAATTCTCGGGTGCCAAGGT -t 20 -l 10 -L 35 -q 30 adaptorQC.fastq.gz
 \end{lstlisting}
 \end{steps}
 
 \begin{note}
-Remeber to do the adaptor clipping before the quality trimming of bases.
+Remeber the adaptor clipping should be done before the quality trimming of bases. The order may vary from one tool to another. So make sure if you know how the method you are using works. 
 \end{note}
 
 \begin{steps}
