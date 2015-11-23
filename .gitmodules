@@ -1,9 +1,6 @@
 [submodule "style"]
 	path = style
 	url = https://github.com/BPA-CSIRO-Workshops/btp-handout-style.git
-[submodule "905_post-workshop"]
-	path = 905_post-workshop
-	url = https://github.com/BPA-CSIRO-Workshops/btp-module-nectar.git
 [submodule "orchestration"]
 	path = orchestration
 	url = https://github.com/BPA-CSIRO-Workshops/btp-orchestration.git
