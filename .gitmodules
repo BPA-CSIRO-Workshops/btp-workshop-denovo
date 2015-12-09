@@ -6,19 +6,16 @@
 	url = https://github.com/BPA-CSIRO-Workshops/btp-orchestration.git
 [submodule "040_general_qc"]
 	path = 040_general_qc
-	url = https://github.com/tsonika/Denovo_DNA_2015/040_general_qc.git
-[submodule "050_assembly_qc"]
-	path = 050_assembly_qc
-	url = https://github.com/tsonika/Denovo_DNA_2015/050_assembly_qc.git
+	url = https://github.com/BPA-CSIRO-Workshops/btp-module-ngs-qc.git
 [submodule "020_cmd_intro"]
 	path = 020_cmd_intro
-	url = https://github.com/tsonika/cmd_intro.git
+	url = https://github.com/BPA-CSIRO-Workshops/denovo-module-cli.git
 [submodule "060_euk_assem"]
 	path = 060_euk_assem
-	url = https://github.com/tsonika/euk_assemly.git
+	url = https://github.com/BPA-CSIRO-Workshops/denovo-module-euk.git
 [submodule "050_bac_assem"]
 	path = 050_bac_assem
-	url = https://github.com/tsonika/bac_assembly.git
+	url = https://github.com/BPA-CSIRO-Workshops/denovo-module-bac.git
 [submodule "070_scaffold"]
 	path = 070_scaffold
-	url = https://github.com/tsonika/scaffolding
+	url = https://github.com/BPA-CSIRO-Workshops/denovo-module-scaffolding.git
