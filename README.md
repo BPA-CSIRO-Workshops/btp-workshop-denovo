@@ -16,7 +16,8 @@ Bioinformatics Training Platform (BTP) Workshop: A denovo Assembly Hands-on Work
   * Time Required
     * 
   * Compute Requirements
-    * 
+    * Minimum: 4 CPUs, 16GB RAM, 30GB Storage
+    * Recommended: Anything > minimum
 
 License
 =======
